@@ -20,8 +20,8 @@ const Footer = () => {
         </div>
         <div className="flex flex-col gap-2 text-sm">
             <h1 className="text-[#50555E] hover:text-gray-300 text-base sm:text-sm mb-4">Contact</h1>
-            <span className="sm:text-xs text-sm">45489478465</span>
-            <span className="sm:text-xs text-sm">help@help.com</span>
+            <span className="sm:text-xs text-sm"></span>
+            <span className="sm:text-xs text-sm">info@dyvostech.com</span>
         </div>
 
     </div>

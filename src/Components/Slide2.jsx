@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react"
+import Image from "./Image";
 
 const Slide2 = () => {
     const [currentSlide,setCurrentSlide]= useState(0)
@@ -10,9 +11,9 @@ const Slide2 = () => {
     },[])
 
     const reviews = [
-        { text: "This website is amazing! I found exactly what I needed.", name: "John Doe" },
-        { text: "Highly recommend! The user interface is super easy to navigate.", name: "Company XYZ" },
-        { text: "Great customer service, quick response time!", name: "Jane Smith" },
+        { text: "This website is amazing! I found exactly what I needed.", name: "Alex T." },
+        { text: "Highly recommend! The user interface is super easy to navigate.", name: "Mia S." },
+        { text: "Great customer service, quick response time!", name: "Rahul K." },
         { text: "An excellent platform for finding quality products.", name: "Tech Solutions Inc." }
     ];
 
@@ -43,10 +44,12 @@ const Slide2 = () => {
             ))}
             </div>
         </div>
-        <div className="sm:w-1/2 h-1/2 sm:h-full  flex items-center justify-center">
-        <div className="sm:h-full h-44">
-            <img className="max-w-full max-h-full  object" 
-            src="https://www.proedsolutions.com/wp-content/themes/micron/images/placeholders/placeholder_small_dark.jpg"/>
+        <div className="sm:w-1/2 h-full sm:h-full flex justify-around  overflow-hidden">
+        <div className="sm:h-full h-44 " >
+            <Image className="w-full h-full  sm:object-contain" 
+            path="review.jpg"
+            w={814} 
+            />
             </div>
         </div>
     </div>
